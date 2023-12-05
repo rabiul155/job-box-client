@@ -6,13 +6,9 @@ const Main = () => {
   const { pathname } = useLocation();
 
   return (
-    <div>
+    <div className="max-w-screen-xl">
       <Navbar />
-      <div
-        className={` ${
-          pathname === "/" ? "max-w-[1600px] px-5" : "max-w-7xl"
-        } max-w-[1600px] mx-auto`}
-      >
+      <div>
         <Outlet />
       </div>
     </div>
